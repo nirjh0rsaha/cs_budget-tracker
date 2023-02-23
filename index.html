@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div>
+      <h1 class="text-center fw-bold text-danger mt-3">Valentine Budget : <span id="Budget"> 2000</span> Tk</h1>
+    </div>
+
+    <div class="shop-container d-flex justify-content-around mt-4">
+      <div>
+        <div class="rose p-3 box">
+          <img class="logo" src="./images/kitkat.png" alt="" />
+          <h6>KitKat Chocolate</h6>
+          <h5>Price: <span id="kitkat-price"> 200</span> Tk</h5>
+          <input id="kitkat-quantity" type="text" placeholder="Quantity"/>
+          <button onclick="handleKitkat()" id="kitkat-buy-btn" class="buy-btn">Buy Now</button>
+        </div>
+        <div class="rose p-3 box">
+          <img class="logo" src="./images/image-removebg-preview.png" alt="" />
+          <h6>Rose</h6>
+          <h5>Price: <span id="rose-price"> 100</span> Tk</h5>
+          <input id="rose-quantity" type="text" placeholder="Quantity"/>
+          <button id="rose-buy-btn" class="buy-btn">Buy Now</button>
+        </div>
+        <div class="rose p-3 box">
+          <img class="logo" src="./images/diary.jpg" alt="" />
+          <h6>Diary</h6>
+          <h5>Price: <span id="diary-price"> 100</span> Tk</h5>
+          <input id="diary-quantity" type="text" placeholder="Quantity"/>
+          <button id="diary-buy-btn" class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="money-tracker text-center">
+        <h4>Chocolate: <span id="chocolate"> 0</span> Tk</h4>
+        <hr />
+        <h4>Rose: <span id="rose"> 0</span> Tk</h4>
+        <hr />
+        <h4>Diary: <span id="diary"> 0</span> Tk</h4>
+        <hr />
+        <h3>Total: <span id="total"> 0</span> Tk</h3>
+        <div class="promo-code text-center p-3">
+          <h5 class="bg-info rounded-3 p-1">Use Promo Code <strong>Valentine2023</strong> for 10% Discount</h5>
+          <input id="promo-code" class="p-1 mt-2" type="text" placeholder="Promo Code" />
+          <button id="btn" class="btn btn-primary" type="button">Apply</button>
+        </div>
+        <h2 class="mt-3">ALL COST: <span id="all-total"> 00</span> Tk</h2>
+      </div>
+    </div>
+    <!-- javascript  -->
+    <script src="valentine.js"></script>
+  </body>
+</html>
